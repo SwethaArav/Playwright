@@ -1,0 +1,59 @@
+/* elationship based xpath
+
+
+
+1. Parent to Child
+-------------------
+
+
+//form[@id='login']/p
+
+
+2. Grandparent to grsndchild
+----------------------------
+
+
+//form[@id='login']//label
+
+
+
+3. CHild to Parent
+------------------
+
+
+//input[@id='username']/parent::p
+
+
+4. GrandCHild to Grandparent
+------------------------------
+
+
+//input[@id='username']/ancestor::form
+
+
+5. Younger sibling to elder sibling
+------------------------------------
+
+
+//input[@id='username']/preceding-sibling::label
+
+
+6. Elder Sibling to Younger Sibling
+------------------------------------
+
+
+//label[text()='Username']/following-sibling::input
+
+
+7. Elder cousin to Younger cousin
+----------------------------------
+
+
+//input[@id='username']/following::label
+
+
+8. Youmger cousin to Elder cousin
+----------------------------------
+
+
+//label[text()='Password']/preceding::label */
